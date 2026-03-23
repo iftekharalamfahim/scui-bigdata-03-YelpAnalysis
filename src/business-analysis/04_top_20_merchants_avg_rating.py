@@ -1,4 +1,5 @@
 %pyspark
+from pyspark.sql import functions as F
 # Table: business
 df = spark.table("business") \
     .groupBy("name") \
