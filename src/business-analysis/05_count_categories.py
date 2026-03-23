@@ -3,8 +3,9 @@ from pyspark.sql import functions as F
 
 category_count = (spark.table("business")
                   .filter(F.col("categories").isNotNull())
-                  .select(F.split("categories", ", ").alias("cat_array"))
+                  .select(F.split("categories", ",").alias("cat_array"))
                   .select(F.explode("cat_array").alias("category"))
+                  .select(F.trim(F.col("category")).alias("category"))
                   .distinct()
                   .count())
 
