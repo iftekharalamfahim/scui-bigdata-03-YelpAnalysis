@@ -1,29 +1,43 @@
 %pyspark
 from pyspark.sql import functions as F
 
-cuisines = [
-    "American", "Mexican", "Italian", "Japanese", "Chinese", "Thai",
-    "Mediterranean", "French", "Vietnamese", "Greek", "Indian", "Korean",
-    "Hawaiian", "African", "Spanish", "Middle Eastern"
-]
+business_df = spark.table("business")
+review_df = spark.table("review")
 
-data = []
-for cuisine in cuisines:
-    # Get business IDs belonging to this cuisine
-    biz_ids = [row.business_id for row in spark.table("business")
-               .filter(F.col("categories").contains(cuisine))
-               .select("business_id").collect()]
+cuisine_df = business_df \
+    .filter(business_df.categories.like("%Restaurants%")) \
+    .selectExpr(
+        "business_id",
+        "CASE " +
+        "  WHEN categories LIKE '%American%'       THEN 'American'       " +
+        "  WHEN categories LIKE '%Mexican%'        THEN 'Mexican'        " +
+        "  WHEN categories LIKE '%Italian%'        THEN 'Italian'        " +
+        "  WHEN categories LIKE '%Japanese%'       THEN 'Japanese'       " +
+        "  WHEN categories LIKE '%Chinese%'        THEN 'Chinese'        " +
+        "  WHEN categories LIKE '%Thai%'           THEN 'Thai'           " +
+        "  WHEN categories LIKE '%Mediterranean%'  THEN 'Mediterranean'  " +
+        "  WHEN categories LIKE '%French%'         THEN 'French'         " +
+        "  WHEN categories LIKE '%Vietnamese%'     THEN 'Vietnamese'     " +
+        "  WHEN categories LIKE '%Greek%'          THEN 'Greek'          " +
+        "  WHEN categories LIKE '%Indian%'         THEN 'Indian'         " +
+        "  WHEN categories LIKE '%Korean%'         THEN 'Korean'         " +
+        "  WHEN categories LIKE '%Hawaiian%'       THEN 'Hawaiian'       " +
+        "  WHEN categories LIKE '%African%'        THEN 'African'        " +
+        "  WHEN categories LIKE '%Spanish%'        THEN 'Spanish'        " +
+        "  WHEN categories LIKE '%Middle Eastern%' THEN 'Middle Eastern' " +
+        "  ELSE 'Other' " +
+        "END AS cuisine_type"
+    ) \
+    .filter("cuisine_type != 'Other'")
 
-    if biz_ids:
-        rev_cnt = (spark.table("review")
-                   .filter(F.col("business_id").isin(biz_ids))
-                   .count())
-    else:
-        rev_cnt = 0
-    data.append((cuisine, rev_cnt))
+result = cuisine_df \
+    .join(review_df, cuisine_df.business_id == review_df.business_id) \
+    .groupBy("cuisine_type") \
+    .count() \
+    .withColumnRenamed("count", "Review Count") \
+    .withColumnRenamed("cuisine_type", "Cuisine Type") \
+    .orderBy("Review Count", ascending=False)
 
-df = spark.createDataFrame(data, ["cuisine", "review_count"])
 print("=== Number of Reviews per Restaurant Type ===")
-df.show()
-z.show(df)
-# Chart suggestion: bar chart (keys: cuisine, values: review_count)
+result.show(16)
+z.show(result)
