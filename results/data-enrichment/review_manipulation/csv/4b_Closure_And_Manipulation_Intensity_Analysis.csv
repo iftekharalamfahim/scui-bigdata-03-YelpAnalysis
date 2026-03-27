@@ -1,0 +1,5 @@
+﻿manipulation_tier,business_count,closure_rate_pct,avg_pre_spike_rating,avg_peak_rating,avg_post_spike_rating,avg_drop,avg_net_change
+Heavy   (drop >= 1.0 stars),18,16.7,4.14,4.69,3.48,1.21,-0.66
+Light   (drop < 0.5 stars),150,6.7,4.46,4.58,4.44,0.13,-0.02
+Moderate(drop >= 0.5 stars),36,5.6,4.26,4.57,3.87,0.7,-0.38
+Severe  (drop >= 1.5 stars),10,0.0,4.0,4.64,2.4,2.24,-1.6
