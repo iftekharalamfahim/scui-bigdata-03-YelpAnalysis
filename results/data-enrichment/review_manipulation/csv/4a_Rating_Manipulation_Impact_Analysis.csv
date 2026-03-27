@@ -1,0 +1,215 @@
+﻿name,city,state,still_open,avg_before,avg_during,avg_after,rating_lift_during,rating_drop_after_spike,net_long_term_change,review_count_before,review_count_during,review_count_after
+The Holy Ground,New Orleans,LA,1,3.67,4.65,1.0,0.98,3.65,-2.67,3,23,1
+Scoopers Drive-In,Sparks,NV,1,3.67,4.88,2.0,1.21,2.88,-1.67,3,17,4
+Bluewater Grill - Santa Barbara,Santa Barbara,CA,1,4.02,4.52,2.0,0.5,2.52,-2.02,65,31,2
+Independence Prime,Philadelphia,PA,1,2.65,4.76,2.42,2.11,2.34,-0.23,17,17,12
+Wingstop,Reno,NV,1,4.22,4.69,2.44,0.47,2.25,-1.78,9,29,9
+Fit Buddha,Santa Barbara,CA,1,5.0,4.93,3.0,-0.07,1.93,-2.0,1,15,1
+La Botana Tacos,Tucson,AZ,1,4.18,4.7,2.8,0.52,1.9,-1.38,11,23,5
+Sammy's Mexican Grill,Catalina,AZ,1,5.0,3.72,2.0,-1.28,1.72,-3.0,1,32,3
+City Fitness - Graduate Hospital,Philadelphia,PA,1,4.29,4.52,2.88,0.23,1.64,-1.41,14,33,8
+Whiskey Cake,Tampa,FL,1,3.26,5.0,3.43,1.74,1.57,0.17,42,25,30
+Acropolis Greek Taverna,St. Petersburg,FL,1,4.27,4.94,3.45,0.67,1.49,-0.82,15,18,11
+Saudia Shuler's Country Cookin',Philadelphia,PA,1,3.5,4.74,3.33,1.24,1.41,-0.17,2,27,3
+Trolley Car Diner,Philadelphia,PA,0,3.25,4.58,3.17,1.33,1.41,-0.08,12,31,12
+Pi Pizzeria - Delmar Loop,Saint Louis,MO,1,4.44,4.41,3.06,-0.03,1.35,-1.38,9,22,17
+The Human Bean,Reno,NV,1,4.86,5.0,3.67,0.14,1.33,-1.19,7,22,3
+Hippot Shabu Shabu,Philadelphia,PA,1,4.33,4.29,3.0,-0.04,1.29,-1.33,51,51,8
+Felipe's Mexican Taqueria - French Quarter,New Orleans,LA,1,3.38,4.69,3.42,1.31,1.27,0.04,16,26,31
+Crazy Sushi,Philadelphia,PA,1,3.9,4.97,3.73,1.07,1.24,-0.17,10,30,15
+Blaze Pizza,Indianapolis,IN,1,4.1,4.73,3.5,0.63,1.23,-0.6,10,22,14
+Baja Sharkeez,Santa Barbara,CA,1,4.25,4.79,3.59,0.54,1.2,-0.66,16,28,27
+Hofbräuhaus,St Petersburg,FL,0,3.17,4.34,3.17,1.17,1.17,0.0,70,59,54
+Oasis Nails,Wesley Chapel,FL,1,5.0,4.65,3.5,-0.35,1.15,-1.5,1,20,8
+900 Degrees Woodfired Pizza,Wesley Chapel,FL,1,3.2,4.47,3.38,1.27,1.09,0.18,10,17,16
+Cumaco Arepa House,Indianapolis,IN,1,5.0,4.56,3.5,-0.44,1.06,-1.5,6,27,4
+Gate 1 Travel,Fort Washington,PA,1,4.54,4.56,3.54,0.02,1.02,-1.0,67,27,24
+LaScala's Fire Glassboro,Glassboro,NJ,1,4.47,4.78,3.77,0.31,1.01,-0.7,17,18,13
+Simply Pho & Grill,Tampa,FL,1,3.89,4.88,3.88,0.99,1.0,-0.01,9,26,8
+Salon Thalia,Philadelphia,PA,0,5.0,5.0,4.0,0.0,1.0,-1.0,1,11,2
+Cantina Dos Segundos,Philadelphia,PA,1,3.73,4.45,3.46,0.72,0.99,-0.27,15,20,13
+The Local Fresh Grill,Port Richey,FL,1,4.67,3.35,2.4,-1.32,0.95,-2.27,3,17,5
+Renzo's,Tampa,FL,1,4.33,4.91,4.0,0.58,0.91,-0.33,27,22,19
+Evangeline,New Orleans,LA,1,4.28,4.71,3.81,0.43,0.9,-0.47,36,21,32
+Mole y Abuela,Tampa,FL,0,5.0,4.27,3.37,-0.73,0.9,-1.63,2,56,49
+Gyu-Kaku Japanese BBQ,Philadelphia,PA,1,3.38,4.4,3.52,1.02,0.88,0.14,32,20,21
+Ijji 4,Reno,NV,1,4.73,4.92,4.09,0.19,0.83,-0.64,70,25,45
+Amy's Donuts,Tucson,AZ,1,3.5,4.17,3.36,0.67,0.81,-0.14,10,60,45
+Meet Up Chinese Cuisine,Santa Barbara,CA,1,4.33,4.72,3.92,0.39,0.8,-0.41,30,29,13
+Nueva Cantina,Saint Petersburg,FL,1,4.41,4.79,4.0,0.38,0.79,-0.41,27,38,31
+Punch Bowl Social Indianapolis,Indianapolis,IN,1,4.02,4.83,4.08,0.81,0.75,0.06,54,29,50
+Kei Sushi,Reno,NV,1,4.82,4.81,4.07,-0.01,0.74,-0.75,11,43,60
+Ramen 4 Real,Reno,NV,1,5.0,4.26,3.53,-0.74,0.73,-1.47,1,43,51
+Tiki Docks River Bar & Grill,Riverview,FL,1,3.0,4.22,3.5,1.22,0.72,0.5,54,32,32
+Tavern,Nashville,TN,1,4.2,4.62,3.9,0.42,0.72,-0.3,35,42,29
+Gaspar's Grotto,Tampa,FL,1,3.57,4.44,3.75,0.87,0.69,0.18,23,27,20
+reLiSH Gourmet Burgers,Edmonton,AB,0,5.0,4.58,3.9,-0.42,0.68,-1.1,3,24,20
+Sandbar,Santa Barbara,CA,1,3.58,4.5,3.82,0.92,0.68,0.24,48,24,57
+Ichicoro Ane,Saint Petersburg,FL,1,4.24,4.28,3.6,0.04,0.68,-0.64,17,40,48
+Duffy's Sports Grill,Tampa,FL,1,4.62,4.47,3.8,-0.15,0.67,-0.82,21,36,56
+Katie's Pizza & Pasta Osteria,Town and Country,MO,1,3.11,4.28,3.62,1.17,0.66,0.51,9,25,29
+Uniboil,Goleta,CA,1,5.0,4.73,4.09,-0.27,0.64,-0.91,2,30,33
+BurgerFi,Tampa,FL,1,4.63,4.67,4.03,0.04,0.64,-0.6,38,30,40
+Aqua S,New Orleans,LA,1,5.0,4.73,4.11,-0.27,0.62,-0.89,1,22,19
+Poe's Sandwich Joint,Philadelphia,PA,1,5.0,4.82,4.2,-0.18,0.62,-0.8,2,33,10
+Rocco's Tacos and Tequila Bar - Tampa,Tampa,FL,1,3.42,4.22,3.62,0.8,0.6,0.2,66,37,71
+IKEA,Fishers,IN,1,5.0,4.19,3.59,-0.81,0.6,-1.41,2,37,56
+Moontown Brewing Company,Whitestown,IN,1,4.67,4.63,4.04,-0.04,0.59,-0.63,9,24,23
+Sushimi's,Reno,NV,1,3.75,4.63,4.08,0.88,0.55,0.33,4,30,24
+Dank Bowl Kitchen,Isla Vista,CA,1,3.6,4.75,4.2,1.15,0.55,0.6,5,16,5
+The Good Lion,Santa Barbara,CA,1,4.28,4.89,4.35,0.61,0.54,0.07,18,18,17
+Taste of Szechuan,Cherry Hill,NJ,1,4.86,5.0,4.47,0.14,0.53,-0.39,7,21,17
+Paradeco Coffee Roasters,St. Petersburg,FL,1,4.42,5.0,4.47,0.58,0.53,0.05,26,13,19
+El Charro Cafe,Tucson,AZ,1,3.86,4.4,3.88,0.54,0.52,0.02,28,35,64
+Moar Tea & Poke,Indianapolis,IN,1,4.8,4.83,4.32,0.03,0.51,-0.48,5,18,28
+Party Fowl - Cool Springs,Franklin,TN,1,3.38,4.94,4.44,1.56,0.5,1.06,8,18,18
+Bear Canyon Pizza,Tucson,AZ,1,5.0,4.2,3.71,-0.8,0.49,-1.29,1,35,28
+Nine Ting,Philadelphia,PA,1,4.16,4.5,4.03,0.34,0.47,-0.13,38,52,97
+Latea Bubble Tea Lounge,Indianapolis,IN,1,5.0,4.87,4.4,-0.13,0.47,-0.6,2,31,20
+Sugar Factory,Tampa,FL,1,2.73,4.55,4.08,1.82,0.47,1.35,15,20,24
+Ike's Sandwiches,Reno,NV,1,4.6,4.56,4.1,-0.04,0.46,-0.5,10,25,29
+Chuy's,Lutz,FL,1,4.22,4.41,3.95,0.19,0.46,-0.27,65,37,62
+Craft Street Kitchen - Oldsmar,Oldsmar,FL,1,4.61,4.96,4.5,0.35,0.46,-0.11,33,24,32
+Katie's Pizza & Pasta Osteria,Saint Louis,MO,1,3.6,4.25,3.81,0.65,0.44,0.21,5,20,27
+Salt Shack on the Bay,Tampa,FL,1,3.96,3.71,3.28,-0.25,0.43,-0.68,23,58,90
+Bubblefish,Philadelphia,PA,1,4.19,4.36,3.93,0.17,0.43,-0.26,73,36,43
+Portillo's Hot Dogs,Brandon,FL,1,5.0,3.8,3.37,-1.2,0.43,-1.63,10,92,119
+The Sandwich Spot,Reno,NV,1,5.0,4.6,4.18,-0.4,0.42,-0.82,6,30,38
+Barrio Charro,Tucson,AZ,1,5.0,4.55,4.15,-0.45,0.4,-0.85,1,29,34
+Cajun Encounters Tour Company,New Orleans,LA,1,4.61,4.64,4.24,0.03,0.4,-0.37,56,56,67
+Reytas Filipino Cuisine,Cherry Hill,NJ,1,4.36,4.68,4.28,0.32,0.4,-0.08,11,28,18
+Chengdu Famous Food,Philadelphia,PA,1,4.49,4.62,4.22,0.13,0.4,-0.27,37,37,18
+Mother's Restaurant,New Orleans,LA,1,3.39,3.78,3.4,0.39,0.38,0.01,192,67,185
+Cleo's,New Orleans,LA,1,4.3,4.72,4.34,0.42,0.38,0.04,37,29,38
+Batter & Crumbs Vegan Bakery and Cafe,Philadelphia,PA,1,5.0,4.93,4.56,-0.07,0.37,-0.44,1,14,9
+Pho Loc Tho,Riverview,FL,1,5.0,4.69,4.32,-0.31,0.37,-0.68,3,29,34
+Mi Nail Salon,Indianapolis,IN,1,4.7,4.93,4.56,0.23,0.37,-0.14,10,15,9
+Spice Kitchen,Tampa,FL,1,5.0,4.77,4.41,-0.23,0.36,-0.59,11,30,32
+Brick & Brew,Media,PA,1,3.5,4.07,3.71,0.57,0.36,0.21,24,29,35
+Shake Shack,St. Louis,MO,1,4.0,3.6,3.24,-0.4,0.36,-0.76,1,57,110
+Liter House,Indianapolis,IN,1,5.0,4.44,4.1,-0.56,0.34,-0.9,1,45,48
+Bistro SouthEast,Philadelphia,PA,1,4.5,4.86,4.52,0.36,0.34,0.02,6,14,21
+An-Asian Kitchen & Bar,Reno,NV,0,4.79,4.4,4.07,-0.39,0.33,-0.72,42,30,46
+American Social,Tampa,FL,1,3.29,4.48,4.15,1.19,0.33,0.86,49,31,40
+Zeppelin,Reno,NV,0,4.18,4.65,4.32,0.47,0.33,0.14,56,37,38
+Mission BBQ,Nashville,TN,1,4.77,4.84,4.51,0.07,0.33,-0.26,31,32,65
+KRĒM,Reno,NV,1,5.0,4.59,4.27,-0.41,0.32,-0.73,2,56,45
+Uncorked Wine Tasting and Kitchen,Santa Barbara,CA,1,4.87,4.94,4.63,0.07,0.31,-0.24,23,18,16
+The Smoke Shack,Tampa,FL,0,4.71,4.89,4.59,0.18,0.3,-0.12,34,28,51
+Blk Mkt Eats,St Louis,MO,1,4.69,4.69,4.39,0.0,0.3,-0.3,13,32,59
+Choppa Poke,Goleta,CA,1,4.6,4.33,4.03,-0.27,0.3,-0.57,15,27,33
+House of Mexica,Reno,NV,1,5.0,4.93,4.64,-0.07,0.29,-0.36,15,45,75
+Chris' Ice Cream,Indianapolis,IN,1,4.8,4.85,4.56,0.05,0.29,-0.24,5,34,9
+Angelo's Pizzeria,Philadelphia,PA,1,4.48,4.83,4.54,0.35,0.29,0.06,23,29,26
+Bab Café - Reno,Reno,NV,1,5.0,4.68,4.39,-0.32,0.29,-0.61,1,53,67
+Haveli Indian Cuisine & Bar,Sparks,NV,1,5.0,4.72,4.44,-0.28,0.28,-0.56,2,53,105
+Roxy,Reno,NV,1,4.13,4.88,4.61,0.75,0.27,0.48,8,16,18
+Avo,Nashville,TN,1,4.62,4.43,4.16,-0.19,0.27,-0.46,21,30,37
+Rose & Lois,Carmel,IN,1,4.83,4.93,4.67,0.1,0.26,-0.16,6,28,15
+Slapfish,Indianapolis,IN,1,4.71,4.77,4.51,0.06,0.26,-0.2,38,31,41
+Glory Beer Bar & Kitchen,Philadelphia,PA,1,5.0,4.96,4.71,-0.04,0.25,-0.29,2,28,21
+Two Chicks Cafe,New Orleans,LA,1,4.35,4.68,4.44,0.33,0.24,0.09,31,34,41
+Beard Papa's,New Orleans,LA,1,4.24,4.91,4.67,0.67,0.24,0.43,17,22,3
+Blaze Pizza,Sparks,NV,1,4.07,4.24,4.0,0.17,0.24,-0.07,14,25,17
+Dan Dan,Philadelphia,PA,1,3.78,4.16,3.92,0.38,0.24,0.14,81,31,63
+Hambone's Trivia,Indianapolis,IN,1,5.0,4.9,4.67,-0.1,0.23,-0.33,2,42,3
+CharroVida,Tucson,AZ,1,4.41,4.08,3.86,-0.33,0.22,-0.55,22,50,66
+Meet Noodles,Nashville,TN,1,4.52,4.72,4.5,0.2,0.22,-0.02,21,65,66
+Octopus Falafel Truck,Philadelphia,PA,1,5.0,5.0,4.78,0.0,0.22,-0.22,13,43,37
+Forbici Modern Italian,Tampa,FL,1,5.0,4.09,3.87,-0.91,0.22,-1.13,9,47,70
+Mr Sushi All You Can Eat,Cherry Hill,NJ,1,5.0,4.58,4.36,-0.42,0.22,-0.64,2,55,95
+BurgerFuel Broad Ripple,Indianapolis,IN,0,5.0,4.36,4.14,-0.64,0.22,-0.86,7,59,98
+The Brewer's Cabinet,Reno,NV,1,4.0,4.42,4.2,0.42,0.22,0.2,17,24,35
+City Museum,Saint Louis,MO,1,4.0,4.56,4.34,0.56,0.22,0.34,43,25,38
+The Franklin Fountain,Philadelphia,PA,1,3.9,4.29,4.08,0.39,0.21,0.18,48,38,72
+Taste of India,Reno,NV,1,5.0,4.65,4.44,-0.35,0.21,-0.56,2,31,55
+Pacific Counter,Saint Petersburg,FL,1,4.85,4.89,4.69,0.04,0.2,-0.16,20,38,55
+Postino Grant,Tucson,AZ,1,5.0,4.83,4.65,-0.17,0.18,-0.35,4,29,17
+Broadway Oyster Bar,St Louis,MO,1,4.38,4.66,4.48,0.28,0.18,0.1,58,41,71
+Dierks Bentley's Whiskey Row,Nashville,TN,1,5.0,3.72,3.54,-1.28,0.18,-1.46,4,39,69
+Union Ramen,New Orleans,LA,1,4.0,4.8,4.63,0.8,0.17,0.63,15,44,30
+Morimoto,Philadelphia,PA,1,4.44,4.52,4.35,0.08,0.17,-0.09,39,29,46
+Grove Surf + Coffee,St. Pete Beach,FL,1,4.25,5.0,4.83,0.75,0.17,0.58,8,16,12
+Tupelo Honey,Franklin,TN,1,3.98,4.61,4.44,0.63,0.17,0.46,61,23,45
+Ruby Slipper Cafe,New Orleans,LA,1,4.29,4.69,4.52,0.4,0.17,0.23,45,29,42
+Bleu Sushi,Philadelphia,PA,1,4.52,4.79,4.63,0.27,0.16,0.11,23,29,46
+Chick-fil-A,Reno,NV,1,4.69,4.26,4.1,-0.43,0.16,-0.59,13,38,49
+Island Sushi & Ramen,Boise,"ID",1,4.72,4.57,4.42,-0.15,0.15,-0.3,29,37,36
+Chihuahua's Cantina & Grill,Reno,NV,1,4.21,3.96,3.82,-0.25,0.14,-0.39,14,76,66
+Sweet Handkraft,Metairie,LA,1,4.88,4.81,4.67,-0.07,0.14,-0.21,8,31,42
+Ohana Sushi,Sparks,NV,1,5.0,4.71,4.58,-0.29,0.13,-0.42,6,89,93
+Tyger Tyger,Santa Barbara,CA,0,3.0,4.22,4.09,1.22,0.13,1.09,2,27,44
+Rollies Mexican Patio,Tucson,AZ,1,5.0,4.71,4.59,-0.29,0.12,-0.41,2,35,51
+Nada,Indianapolis,IN,1,4.93,4.36,4.24,-0.57,0.12,-0.69,14,85,163
+Poké Fish,Tampa,FL,1,4.75,4.03,3.91,-0.72,0.12,-0.84,4,29,33
+True Food Kitchen,New Orleans,LA,1,5.0,4.68,4.57,-0.32,0.11,-0.43,1,28,51
+Clear Sky Draught Haus,Dunedin,FL,1,4.07,4.6,4.5,0.53,0.1,0.43,46,25,20
+Crieve Hall Bagel,Nashville,TN,1,5.0,4.92,4.82,-0.08,0.1,-0.18,1,26,11
+El Chinito Gordo,Tucson,AZ,1,4.15,4.3,4.2,0.15,0.1,0.05,20,27,40
+Poke King,Reno,NV,1,4.5,4.7,4.61,0.2,0.09,0.11,8,71,74
+Kaffe Crepe,Reno,NV,1,4.87,4.92,4.83,0.05,0.09,-0.04,60,25,42
+Poké Munch,Creve Coeur,MO,1,4.69,4.64,4.56,-0.05,0.08,-0.13,26,28,27
+Cholita Taqueria,Indianapolis,IN,1,4.24,4.69,4.61,0.45,0.08,0.37,29,26,44
+Wild Garlic Pizza & Pub,Reno,NV,0,4.0,4.75,4.67,0.75,0.08,0.67,11,28,9
+Middle Child,Philadelphia,PA,1,4.86,4.95,4.88,0.09,0.07,0.02,7,20,17
+Tofu House,Reno,NV,0,4.7,4.56,4.49,-0.14,0.07,-0.21,10,34,49
+Café Du Monde,New Orleans,LA,1,4.21,4.2,4.13,-0.01,0.07,-0.08,24,187,248
+Conch Republic Grill,North Redington Bch,FL,1,3.75,4.3,4.24,0.55,0.06,0.49,59,20,25
+Pa & Ma's Backyard BBQ,Indianapolis,IN,1,5.0,4.73,4.67,-0.27,0.06,-0.33,3,33,9
+Free Tours By Foot,New Orleans,LA,1,4.88,5.0,4.94,0.12,0.06,0.06,40,19,54
+Mesa Verde,Santa Barbara,CA,1,4.84,4.94,4.89,0.1,0.05,0.05,172,84,197
+Hajimaru Fishtown,Philadelphia,PA,1,4.86,4.47,4.42,-0.39,0.05,-0.44,7,34,38
+Condado Tacos,Indianapolis,IN,1,3.75,3.84,3.79,0.09,0.05,0.04,20,61,77
+EOS Lounge,Santa Barbara,CA,1,4.0,5.0,4.95,1.0,0.05,0.95,11,23,40
+Bartaco,Tampa,FL,1,3.62,4.1,4.06,0.48,0.04,0.44,39,67,67
+A-1 Express Airport Parking,Tampa,FL,1,1.0,4.53,4.5,3.53,0.03,3.5,1,19,6
+South Philly Barbacoa,Philadelphia,PA,1,4.67,4.57,4.54,-0.1,0.03,-0.13,70,35,79
+The Jesse,Reno,NV,1,5.0,4.71,4.68,-0.29,0.03,-0.32,3,17,25
+Skyline Kitchen & Vine,Reno,NV,1,4.36,4.72,4.69,0.36,0.03,0.33,44,25,16
+OBON Sushi Bar Ramen,Tucson,AZ,1,4.25,3.98,3.96,-0.27,0.02,-0.29,4,51,55
+SUGARED + BRONZED,Philadelphia,PA,1,5.0,4.82,4.81,-0.18,0.01,-0.19,23,17,27
+Festiva,Indianapolis,IN,1,5.0,4.59,4.58,-0.41,0.01,-0.42,1,44,52
+Stove and Tap,Lansdale,PA,1,4.8,4.47,4.46,-0.33,0.01,-0.34,5,36,61
+Station House BBQ,Lutz,FL,1,5.0,5.0,5.0,0.0,0.0,0.0,3,13,5
+Adventure Pet,Reno,NV,1,4.57,5.0,5.0,0.43,0.0,0.43,7,15,3
+SoChatti,Indianapolis,IN,1,5.0,5.0,5.0,0.0,0.0,0.0,8,14,6
+Hogwood BBQ,Franklin,TN,1,4.57,4.52,4.52,-0.05,0.0,-0.05,21,29,44
+Philadelphia Eagles,Philadelphia,PA,1,5.0,5.0,5.0,0.0,0.0,0.0,1,12,1
+Blue Sky Cafe and Bar,Saint Louis,MO,0,1.8,5.0,5.0,3.2,0.0,3.2,10,12,1
+Center For Restorative Breast Surgery,New Orleans,LA,1,5.0,5.0,5.0,0.0,0.0,0.0,1,14,1
+I'm Sergio,Conshohocken,PA,1,4.0,5.0,5.0,1.0,0.0,1.0,1,33,1
+The Drunken Crab,Santa Barbara,CA,1,5.0,4.36,4.37,-0.64,-0.01,-0.63,3,58,103
+Yamitsuki Ramen,Philadelphia,PA,1,2.75,3.9,3.92,1.15,-0.02,1.17,4,30,48
+Goldie,Philadelphia,PA,1,4.41,4.48,4.5,0.07,-0.02,0.09,51,44,62
+Maple Street Biscuit Company - Carrollwood,Tampa,FL,1,4.78,4.61,4.65,-0.17,-0.04,-0.13,27,54,68
+CKO Kickboxing Center City,Philadelphia,PA,1,3.33,4.96,5.0,1.63,-0.04,1.67,3,25,2
+Paleteria Del Angel,Sparks,NV,1,5.0,4.96,5.0,-0.04,-0.04,0.0,6,23,11
+Carrollton Station,New Orleans,LA,1,3.25,4.71,4.75,1.46,-0.04,1.5,4,24,4
+Mesa Burger - Santa Barbara,Santa Barbara,CA,1,4.31,3.77,3.83,-0.54,-0.06,-0.48,16,44,64
+Philly Foodworks,Philadelphia,PA,1,2.0,4.94,5.0,2.94,-0.06,3.0,1,18,1
+Lure Fish House,Santa Barbara,CA,1,5.0,4.31,4.39,-0.69,-0.08,-0.61,8,65,100
+Mr and Mrs Crab,Tampa,FL,1,5.0,4.52,4.61,-0.48,-0.09,-0.39,5,52,76
+Greko Greek Street Food,Nashville,TN,1,4.0,4.09,4.18,0.09,-0.09,0.18,3,53,28
+Kpicu,Clearwater,FL,1,4.78,4.81,4.91,0.03,-0.1,0.13,46,27,32
+Circles + Squares,Philadelphia,PA,1,4.93,4.67,4.77,-0.26,-0.1,-0.16,15,21,13
+The Bagel Place,Philadelphia,PA,1,4.0,4.21,4.32,0.21,-0.11,0.32,4,34,22
+Baby's,Indianapolis,IN,1,4.64,3.97,4.08,-0.67,-0.11,-0.56,11,75,87
+PokeZone,Tucson,AZ,0,5.0,4.36,4.47,-0.64,-0.11,-0.53,5,59,53
+Tlaolli,Indianapolis,IN,1,4.0,4.88,5.0,0.88,-0.12,1.0,4,34,1
+Rocks Consign Furniture,Reno,NV,1,3.67,4.88,5.0,1.21,-0.12,1.33,3,16,11
+Che Chori Foods,Indianapolis,IN,1,4.67,4.79,4.93,0.12,-0.14,0.26,9,28,15
+Isaros Market & Juice Bar,Indianapolis,IN,1,5.0,4.67,4.82,-0.33,-0.15,-0.18,9,30,11
+Coat Check Coffee,Indianapolis,IN,1,4.88,4.75,4.9,-0.13,-0.15,0.02,32,32,40
+Clementine's Naughty and Nice Creamery,St. Louis,MO,1,4.57,4.51,4.69,-0.06,-0.18,0.12,30,35,36
+Redwood Rotisserie + Grill,Reno,NV,1,4.8,3.77,3.95,-1.03,-0.18,-0.85,10,44,55
+Sofia's Greek Bistro,Garden City,"ID",1,3.5,4.78,5.0,1.28,-0.22,1.5,4,18,3
+3 in 1 Restaurant,Indianapolis,IN,1,4.57,4.73,5.0,0.16,-0.27,0.43,7,15,3
+Big City Coffee,Boise,"ID",1,3.82,4.5,4.77,0.68,-0.27,0.95,11,16,13
+NI HAO TEA,Tucson,AZ,1,4.9,4.58,4.86,-0.32,-0.28,-0.04,10,38,22
+Vegan GreenGO,Santa Barbara,CA,0,4.78,3.83,4.13,-0.95,-0.3,-0.65,9,36,69
+Churrasco Brazilian Steakhouse,Reno,NV,1,4.81,4.62,4.92,-0.19,-0.3,0.11,16,61,26
+Skinjectables Anti Aging Bar,Tucson,AZ,1,5.0,4.65,5.0,-0.35,-0.35,0.0,2,17,4
+Ash & Elm Cider,Indianapolis,IN,1,5.0,4.05,4.76,-0.95,-0.71,-0.24,2,56,17
+Fishbox,Philadelphia,PA,1,5.0,5.0,null,0.0,null,null,2,12,null
+The Movement Chiropractic & Manual Medicine,Franklin,TN,1,5.0,5.0,null,0.0,null,null,2,10,null
+Arirang Hibachi Steakhouse,Langhorne,PA,1,4.0,4.89,null,0.89,null,null,5,18,null
