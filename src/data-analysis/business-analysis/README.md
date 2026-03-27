@@ -1,26 +1,275 @@
 # Business Analysis Report
 
-This directory contains comprehensive analysis of Yelp business data, focusing on merchant distribution, ratings, categories, and customer sentiment. All analyses were conducted using PySpark on the Yelp dataset.
+Comprehensive analysis of Yelp business data, focusing on merchant distribution, ratings, categories, and customer sentiment across the U.S. market.
 
-## Table of Contents
+## Executive Summary
 
-1. [Top 20 Most Common Merchants](#1-top-20-most-common-merchants)
-2. [Top 10 Cities with Most Merchants](#2-top-10-cities-with-most-merchants)
-3. [Top 5 States with Most Merchants](#3-top-5-states-with-most-merchants)
-4. [Top 20 Merchants with Average Ratings](#4-top-20-merchants-with-average-ratings)
-5. [Category Count Analysis](#5-category-count-analysis)
-6. [Top 10 Most Frequent Categories](#6-top-10-most-frequent-categories)
-7. [Top 20 Merchants with Most 5-Star Reviews](#7-top-20-merchants-with-most-5-star-reviews)
-8. [Restaurant Types Count](#8-restaurant-types-count)
-9. [Reviews per Restaurant Type](#9-reviews-per-restaurant-type)
-10. [Rating Distribution by Cuisine Type](#10-rating-distribution-by-cuisine-type)
-11. [Turnaround Merchants Analysis](#11-turnaround-merchants-analysis)
-12. [Category Synergy Pairs](#12-category-synergy-pairs)
-13. [Polarizing Businesses Analysis](#13-polarizing-businesses-analysis)
+This analysis examines **Yelp business patterns and market dynamics** to answer critical business questions about merchant concentration, category trends, and customer satisfaction drivers across multiple geographic and business dimensions.
+
+### Core Questions
+- **Which merchant chains dominate the market?** And what are their competitive dynamics?
+- **How is the market geographically distributed?** Which cities and states lead?
+- **What business categories drive engagement?** Which categories co-occur and create synergies?
+- **Which restaurants lead in customer satisfaction?** And which show the most potential for improvement?
+- **How polarized are customer opinions?** Which businesses need consistency improvements?
+
+### Key Findings
+✅ **Market Concentration**: Starbucks (724 locations) and McDonald's (703 locations) lead; fast food and convenience retail dominate  
+✅ **Geographic Hubs**: Philadelphia leads with 14,569 merchants; top 5 states (PA, FL, TN, IN, MO) represent major markets  
+✅ **Category Distribution**: 1,311 diverse categories; Restaurants (52,268), Food (27,781), and Shopping (24,395) dominate  
+✅ **Cuisine Trends**: American restaurants (13,066 locations, 1.7M reviews) drive engagement; Mediterranean and Thai maintain higher ratings  
+✅ **Satisfaction Gaps**: Top performers reach 4.0+ ⭐ (Reading Terminal Market: 4,014 five-star reviews); polarizing businesses show 1.9-1.94 σ  
+✅ **Turnaround Opportunity**: 200+ businesses show 3.5+ star improvements; service-oriented businesses lead recovery
 
 ---
 
-## 1. Top 20 Most Common Merchants
+## Table of Contents
+
+1. [Business Hypothesis](#business-hypothesis)
+2. [Data Sources](#data-sources)
+3. [Methodology](#methodology)
+4. [Analyses Overview](#analyses-overview)
+5. [Key Findings](#key-findings)
+6. [Analysis Details](#analysis-details)
+7. [Files & References](#files--references)
+
+---
+
+## Business Hypothesis
+
+### Problem Statement
+E-commerce and retail executives need to understand market dynamics for strategic decision-making:
+
+1. **Market Entry Strategy** — Which cities/states offer the best opportunities?
+2. **Category Strategy** — What business categories show strongest performance?
+3. **Competitive Positioning** — How do successful merchants outperform peers?
+4. **Risk Management** — Which businesses are underperforming and need intervention?
+5. **Portfolio Optimization** — What category combinations create business synergies?
+
+### Hypotheses to Test
+
+**H1: Market Concentration Hypothesis**
+- Large merchant chains (Starbucks, McDonald's) dominate through scale
+- Market access follows geographic clusters in major metropolitan areas
+- Small, specialized merchants maintain niches despite competitive pressure
+
+**H2: Category Performance Hypothesis**
+- Certain categories (Restaurants, Food) drive disproportionate engagement
+- Co-occurring categories create synergy (Bars + Nightlife + Restaurants)
+- Specialized cuisines maintain higher ratings despite lower volume
+
+**H3: Customer Satisfaction Hypothesis**
+- Service businesses show strongest improvement potential (turnarounds)
+- Automotive/Dental categories polarize more than food/entertainment
+- Geographic location correlates with baseline satisfaction levels
+
+---
+
+## Methodology
+
+### Analysis Framework
+
+**Phase 1: Market Structure Analysis**
+- Merchant chain frequency analysis (top merchants)
+- Geographic distribution (cities, states)
+- Category diversity and concentration metrics
+
+**Phase 2: Performance Analysis**
+- Rating distributions by merchant, category, cuisine
+- Customer sentiment analysis (high vs. low ratings)
+- Cuisine-specific performance metrics
+
+**Phase 3: Business Dynamics**
+- Merchant improvement tracking (turnarounds vs. declines)
+- Category co-occurrence patterns (synergy analysis)
+- Customer opinion polarization (rating standard deviation)
+
+### Key Metrics Calculated
+
+| Metric | Definition |
+|--------|-----------|
+| Merchant Frequency | Number of locations per merchant chain |
+| Geographic Distribution | Merchant/review count by city/state |
+| Average Rating | Mean star rating by category/cuisine |
+| Review Volume | Total reviews per business/category |
+| Rating Spread | 1-5 star distribution percentages |
+| Turnaround Score | Recent rating vs. historical rating improvement |
+| Polarization | Standard deviation of rating distribution |
+| Co-occurrence | Frequency of category pairs in merchant profiles |
+
+### Data Processing Pipeline
+
+1. **Aggregation**: Group reviews by business, category, and city
+2. **Standardization**: Normalize geographic names and category labels
+3. **Calculation**: Compute metrics (means, distributions, frequencies)
+4. **Ranking**: Sort by metric relevance (top performers, outliers)
+5. **Visualization**: Generate charts and summary tables
+
+---
+
+## Analyses Overview
+
+### Analysis 1-3: Market Structure Analysis
+Understand how merchants and categories distribute geographically
+
+### Analysis 4-7: Merchant & Cuisine Performance
+Identify high-performers and customer satisfaction drivers
+
+### Analysis 8-10: Cuisine Analysis & Rating Distribution
+Explore cuisine-specific engagement and satisfaction patterns
+
+### Analysis 11-13: Business Dynamics
+Detect improvement opportunities, category synergies, and polarization
+
+---
+
+## Key Findings
+
+### Finding 1: Fast Food and Convenience Retail Dominate Merchant Distribution
+
+**Top Merchant Chains**
+| Merchant | Locations | Avg Rating |
+|----------|-----------|-----------|
+| Starbucks | 724 | 3.13 ⭐ |
+| McDonald's | 703 | 2.38 ⭐ |
+| Dunkin' | 351 | 3.18 ⭐ |
+| Subway | 312 | 3.10 ⭐ |
+| Taco Bell | 299 | 2.40 ⭐ |
+| CVS Pharmacy | 285 | 2.61 ⭐ |
+| Walgreens | 283 | 2.84 ⭐ |
+
+**Interpretation**:
+- Coffee chains (Starbucks, Dunkin') lead with volume + community presence
+- Fast food (McDonald's, Subway, Taco Bell) shows strong presence but lower ratings (2.4 ⭐)
+- Convenience retail (CVS, Walgreens) maintain consistent but moderate ratings (2.6-2.8 ⭐)
+- Scale leaders ≠ satisfaction leaders; Wawa (3.32 ⭐) and Chick-fil-A (3.38+ ⭐) show premium positioning
+
+### Finding 2: Geographic Market Concentration in 5 Major States
+
+**Top Cities & States**
+| City | State | Merchants | Market Share |
+|------|-------|-----------|-------------|
+| Philadelphia | PA | 14,569 | Highest urban density |
+| Tampa | FL | 14,491 | Second largest |
+| Tucson | AZ | 9,250 | Tier-2 market |
+| Nashville | TN | 8,385 | Emerging hub |
+| Indianapolis | IN | 7,540 | Regional center |
+
+**State-Level Concentration**
+| State | Merchants | % of Dataset |
+|-------|-----------|-------------|
+| Pennsylvania | 34,039 | 10.2% |
+| Florida | 26,330 | 7.9% |
+| Tennessee | 12,056 | 3.6% |
+| Indiana | 11,247 | 3.4% |
+| Missouri | 10,913 | 3.3% |
+
+**Interpretation**:
+- Top 5 states represent 28.4% of entire market
+- Philadelphia and Tampa are market leaders (14K+ merchants each)
+- Strong Tier-2 markets (Tucson, Nashville) present growth opportunities
+- Market concentration suggests supply chain and logistics advantages
+
+### Finding 3: Massive Category Diversity with Extreme Concentration
+
+**Top 10 Categories by Occurrence**
+| Category | Count | % of Total |
+|----------|-------|-----------|
+| Restaurants | 52,268 | 15.6% |
+| Food | 27,781 | 8.3% |
+| Shopping | 24,395 | 7.3% |
+| Home Services | 14,356 | 4.3% |
+| Beauty & Spas | 14,292 | 4.3% |
+| Nightlife | 12,281 | 3.7% |
+| Health & Medical | 11,890 | 3.6% |
+| Local Services | 11,198 | 3.3% |
+| Bars | 11,065 | 3.3% |
+| Automotive | 10,773 | 3.2% |
+
+**Interpretation**:
+- 1,311 distinct categories exist; top 10 represent 57% of mentions
+- Food ecosystem dominates (Restaurants + Food + Bars/Nightlife = 35% of market)
+- Service categories strong (Home Services, Beauty & Spas, Health & Medical = 12%)
+- Massive niche tail (1,300+ categories) suggests long-tail business opportunity
+
+### Finding 4: American Cuisine Dominates; Asian Cuisines Show Strong Engagement
+
+**Cuisine Performance Metrics**
+| Cuisine | Locations | Total Reviews | Avg Rating | Engagement |
+|---------|-----------|---------------|-----------|-----------|
+| American | 13,066 | 1,730,875 | 3.84 ⭐ | Highest volume |
+| Mexican | 4,049 | 349,269 | 3.71 ⭐ | Strong |
+| Italian | 3,997 | 355,606 | 3.79 ⭐ | Strong |
+| Chinese | 2,719 | 180,324 | 3.64 ⭐ | Moderate-high |
+| Japanese | 1,765 | 203,535 | 3.88 ⭐ | **High engagement per location** |
+
+**Interpretation**:
+- American dominates by volume (49% of categorized restaurants)
+- Asian cuisines show higher ratings than expected (Japanese 3.88 ⭐ vs. American 3.84 ⭐)
+- Japanese has highest engagement per location (115 reviews/restaurant average)
+- Mediterranean and Thai maintain 3.8+ ⭐ despite lower volume
+
+### Finding 5: Significant Untapped Improvement Potential (Turnarounds)
+
+**Top 10 Business Turnarounds**
+| Business | Historical | Recent (12mo) | Improvement | Sector |
+|----------|-----------|---------------|------------|--------|
+| Superior Heating & Cooling | 1.31 ⭐ | 5.0 ⭐ | +3.69 ⭐ | HVAC |
+| Lawn Medic | 1.36 ⭐ | 5.0 ⭐ | +3.64 ⭐ | Lawn Care |
+| Moon's Towing | 1.38 ⭐ | 5.0 ⭐ | +3.62 ⭐ | Towing |
+| Takl | 1.41 ⭐ | 5.0 ⭐ | +3.59 ⭐ | Freelance Services |
+| Taco Bell | 1.43 ⭐ | 5.0 ⭐ | +3.57 ⭐ | Fast Food |
+
+**Interpretation**:
+- 200+ businesses show 1.0+ star improvement (strong recovery pattern)
+- Service businesses (HVAC, lawn, towing) lead turnerounds
+- Suggests operational improvements, management changes, or new customer service practices
+- Represents significant business value: 3.5+ star improvement = major competitive advantage
+
+### Finding 6: Category Synergy Creates Business Opportunities
+
+**Top Category Co-occurrences**
+| Category 1 | Category 2 | Co-occurrence | Business Insight |
+|-----------|-----------|--------------|-----------------|
+| Food | Restaurants | 15,472 | Natural ecosystem (diversified menus) |
+| Bars | Nightlife | 11,065 | Expected pairing (venue type) |
+| Nightlife | Restaurants | 8,723 | Bars serve food/dining |
+| Restaurants | Sandwiches | 8,366 | Specialization within cuisine |
+| Bars | Restaurants | 8,337 | Multi-concept venues |
+| American | Restaurants | 8,139 | Cuisine specialization |
+| Pizza | Restaurants | 7,093 | Specialty restaurant type |
+| Coffee & Tea | Food | 6,703 | Beverage + Food pairing |
+| Fast Food | Restaurants | 6,472 | Budget-conscious segment |
+| Breakfast & Brunch | Restaurants | 6,239 | Day-part specialization |
+
+**Interpretation**:
+- Strong predictable pairings (Food+Restaurants, Bars+Nightlife)
+- Suggests multi-category portfolio strategy benefits
+- Long-tail pairings indicate niche business combinations that work
+
+### Finding 7: Automotive & Dental Show Highest Polarization
+
+**Most Polarizing Businesses (Highest Rating Standard Deviation)**
+| Business | Sector | Avg Rating | Std Dev | Reviews | Issue |
+|----------|--------|-----------|---------|---------|--------|
+| Apple Repair Shop | Tech Repair | 2.8 ⭐ | σ=1.94 | 112 | Inconsistent quality |
+| Zak Dental - Santa Barbara | Dental | 2.94 ⭐ | σ=1.93 | 123 | Divisive service experience |
+| Napleton Hyundai | Auto Dealer | 2.76 ⭐ | σ=1.92 | 112 | Sales/service gap |
+| Nissan of Clearwater | Auto Dealer | 2.96 ⭐ | σ=1.91 | 176 | Polarized customer base |
+
+**Interpretation**:
+- Automotive dealers show consistency issues (high σ, moderate ratings)
+- Medical services (Dental, Repair) show quality variability
+- High σ (1.9+) suggests "love it or hate it" experience variation
+- Opportunity: Standardization and process improvement in these sectors
+
+---
+
+## Analysis Details
+
+---
+
+### Analysis 1: Top 20 Most Common Merchants
 
 **Objective:** Identify the 20 most frequently occurring merchant chains across the U.S. Yelp dataset.
 
@@ -41,7 +290,7 @@ This directory contains comprehensive analysis of Yelp business data, focusing o
 
 ---
 
-## 2. Top 10 Cities with Most Merchants
+### Analysis 2: Top 10 Cities with Most Merchants
 
 **Objective:** Identify urban markets with the highest merchant concentration.
 
@@ -70,7 +319,7 @@ This directory contains comprehensive analysis of Yelp business data, focusing o
 
 ---
 
-## 3. Top 5 States with Most Merchants
+### Analysis 3: Top 5 States with Most Merchants
 
 **Objective:** Analyze merchant distribution at the state level.
 
@@ -99,7 +348,7 @@ This directory contains comprehensive analysis of Yelp business data, focusing o
 
 ---
 
-## 4. Top 20 Merchants with Average Ratings
+### Analysis 4: Top 20 Merchants with Average Ratings
 
 **Objective:** Identify the most common merchant chains and their average customer satisfaction ratings.
 
@@ -121,7 +370,7 @@ This directory contains comprehensive analysis of Yelp business data, focusing o
 
 ---
 
-## 5. Category Count Analysis
+### Analysis 5: Category Count Analysis
 
 **Objective:** Determine the total diversity of business categories in the dataset.
 
@@ -131,14 +380,16 @@ This directory contains comprehensive analysis of Yelp business data, focusing o
 - Categories span from broad types (Restaurants, Shopping) to highly specific niches
 
 ### Data Files
-- **Results:** [`05_count_categories.py`](05_count_categories.py) (logic in source code)
+- **Visualization:** [`05_count_categories.png`](../../../results/data-analysis/business-analysis/graphs/05_count_categories.png)
+
+![Category Count Analysis](../../../results/data-analysis/business-analysis/graphs/05_count_categories.png)
 
 ### Source Code
 - **Script:** [`05_count_categories.py`](05_count_categories.py)
 
 ---
 
-## 6. Top 10 Most Frequent Categories
+### Analysis 6: Top 10 Most Frequent Categories
 
 **Objective:** Identify the most common business categories across all merchants.
 
@@ -163,16 +414,13 @@ This directory contains comprehensive analysis of Yelp business data, focusing o
 
 ### Data Files
 - **Results:** [`06_top_10_categories.csv`](../../../results/data-analysis/business-analysis/csv/06_top_10_categories.csv)
-- **Visualization:** [`05_count_categories.png`](../../../results/data-analysis/business-analysis/graphs/05_count_categories.png)
-
-![Top 10 Most Frequent Categories](../../../results/data-analysis/business-analysis/graphs/05_count_categories.png)
 
 ### Source Code
 - **Script:** [`06_top_10_categories.py`](06_top_10_categories.py)
 
 ---
 
-## 7. Top 20 Merchants with Most 5-Star Reviews
+### Analysis 7: Top 20 Merchants with Most 5-Star Reviews
 
 **Objective:** Identify merchants that have earned the highest customer satisfaction, as indicated by 5-star review volume.
 
@@ -200,7 +448,7 @@ This directory contains comprehensive analysis of Yelp business data, focusing o
 
 ---
 
-## 8. Restaurant Types Count
+### Analysis 8: Restaurant Types Count
 
 **Objective:** Quantify the distribution of different restaurant cuisine types in the dataset.
 
@@ -238,7 +486,7 @@ Restaurants are identified by the "Restaurants" category. Cuisine types are extr
 
 ---
 
-## 9. Reviews per Restaurant Type
+### Analysis 9: Reviews per Restaurant Type
 
 **Objective:** Analyze the volume of customer reviews for each restaurant cuisine type.
 
@@ -268,7 +516,7 @@ Restaurants are identified by the "Restaurants" category. Cuisine types are extr
 
 ---
 
-## 10. Rating Distribution by Cuisine Type
+### Analysis 10: Rating Distribution by Cuisine Type
 
 **Objective:** Analyze how customer ratings vary across different restaurant cuisine types, including the full 1-5 star distribution.
 
@@ -302,7 +550,7 @@ Reviews are grouped by cuisine type and star rating (1.0 to 5.0) to create a det
 
 ---
 
-## 11. Turnaround Merchants Analysis
+### Analysis 11: Turnaround Merchants Analysis
 
 **Objective:** Identify businesses whose customer satisfaction has significantly improved, with average rating improvement of at least 1.0 star in the last 12 months compared to their historical average.
 
@@ -349,7 +597,7 @@ Reviews are grouped by cuisine type and star rating (1.0 to 5.0) to create a det
 
 ---
 
-## 12. Category Synergy Pairs
+### Analysis 12: Category Synergy Pairs
 
 **Objective:** Identify the top 10 pairs of distinct business categories that frequently co-occur within the same merchant's profile, revealing business complementarity.
 
@@ -395,7 +643,7 @@ Reviews are grouped by cuisine type and star rating (1.0 to 5.0) to create a det
 
 ---
 
-## 13. Polarizing Businesses Analysis
+### Analysis 13: Polarizing Businesses Analysis
 
 **Objective:** Identify merchants with high review volumes but extremely divisive ratings (high standard deviation), indicating businesses that inspire passionate customer opinions.
 
@@ -437,36 +685,47 @@ Reviews are grouped by cuisine type and star rating (1.0 to 5.0) to create a det
 
 ---
 
-## Notebooks
+## Files & References
 
+### Notebooks
 The complete analysis workflow is documented in:
 - **Zeppelin Notebook**: [`business_analysis.zpln`](../../../notebooks/business-analysis/business_analysis.zpln)
 
-## Visualization Files
-
+### Result Files & Visualizations
 All charts and summary tables are located in:
-- [`../../../results/data-analysis/business-analysis/graphs/`](../../../results/data-analysis/business-analysis/graphs/)
+- **CSV Results**: [`../../../results/data-analysis/business-analysis/csv/`](../../../results/data-analysis/business-analysis/csv/)
+- **PNG Visualizations**: [`../../../results/data-analysis/business-analysis/graphs/`](../../../results/data-analysis/business-analysis/graphs/)
 
 Each analysis includes:
 - High-resolution PNG charts
-- Data tables formatted for easy interpretation
-- Visual hierarchy emphasizing key findings
+- CSV data files for further analysis
+- Detailed findings and interpretations
 
-## Key Metrics Summary
+---
+
+### Market Leaders
 
 | Metric | Value |
 |--------|-------|
-| Total Distinct Categories | 1,311 |
-| Top Merchant Chain Locations | 724 (Starbucks) |
-| Largest City Market | 14,569 merchants (Philadelphia) |
-| Most Reviewed Cuisine | 1,730,875 reviews (American) |
-| Highest 5-Star Count | 4,014 reviews (Reading Terminal Market) |
+| Top Merchant Chain | Starbucks (724 locations) |
+| Largest City Market | Philadelphia (14,569 merchants) |
+| Top State Market | Pennsylvania (34,039 merchants) |
+| Most Common Category | Restaurants (52,268) |
+| Most Reviewed Cuisine | American (1,730,875 reviews) |
+| Highest 5-Star Count | Reading Terminal Market (4,014 reviews) |
+
+### Business Performance Highlights
+
+| Metric | Value |
+|--------|-------|
 | Cuisine Type Diversity | 16 primary cuisines analyzed |
-| Turnaround Merchants Identified | 200+ |
-| Top Category Pair Co-occurrence | 15,472 (Food + Restaurants) |
+| Turnaround Merchants Identified | 200+ businesses with 1.0+ star improvement |
+| Top Category Pair Co-occurrence | Food + Restaurants (15,472 co-occurrences) |
+| Highest Polarization (σ) | Apple Repair Shop (1.94) |
+| Most Polarized Sector | Automotive Dealerships |
 
 ---
 
 **Last Updated**: March 2026  
 **Data Period**: Historical Yelp dataset through January 2022  
-**Analysis Tool**: Apache Spark (PySpark)
+**Analysis Tool**: Apache Spark (PySpark)  
