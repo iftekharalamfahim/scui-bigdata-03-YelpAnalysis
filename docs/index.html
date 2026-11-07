@@ -1,0 +1,326 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="SCUI Big Data team project: end-to-end Yelp Open Dataset analytics spanning business, review, user, weather, crime, and manipulation enrichment studies." />
+  <title>Yelp Analysis - SCUI Big Data</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#overview">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <div class="header-inner">
+      <a class="logo" href="#top">Yelp Analysis</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+        <span></span><span></span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Primary">
+        <a href="#overview">Overview</a>
+        <a href="#team">Team</a>
+        <a href="#tracks">Tracks</a>
+        <a href="#findings">Findings</a>
+        <a href="#results">Results</a>
+        <a href="#stack">Stack</a>
+        <a class="nav-cta" href="https://github.com/iftekharalamfahim/scui-bigdata-03-YelpAnalysis" target="_blank" rel="noopener noreferrer">Repository</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-label="Project introduction">
+      <div class="hero-media" role="img" aria-label="Busy restaurant dining room atmosphere"></div>
+      <div class="hero-scrim"></div>
+      <div class="hero-content">
+        <p class="brand">Yelp Analysis</p>
+        <h1>Big data stories behind every star, check-in, and storefront.</h1>
+        <p class="lede">An end-to-end Spark analytics project on the Yelp Open Dataset - market structure, customer language, weather mood, crime context, and review-trust signals.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#results">Browse result charts</a>
+          <a class="btn btn-ghost" href="#tracks">View analysis tracks</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="overview">
+      <div class="wrap">
+        <p class="eyebrow reveal">Executive overview</p>
+        <h2 class="reveal">What this project does</h2>
+        <p class="section-copy reveal">
+          Built by the SCUI Big Data team, this repository turns the Yelp Open Dataset into reproducible analytics:
+          domain notebooks, PySpark scripts, and publication-ready CSV + chart artifacts under <code>results/</code>.
+          Work spans two tracks - core data analysis and external data enrichment - so findings sit in real-world context, not just platform metrics.
+        </p>
+
+        <div class="stat-strip reveal" role="list">
+          <div role="listitem"><strong>2</strong><span>analysis tracks</span></div>
+          <div role="listitem"><strong>10</strong><span>domain modules</span></div>
+          <div role="listitem"><strong>90</strong><span>generated charts</span></div>
+          <div role="listitem"><strong>4</strong><span>team roles</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="team">
+      <div class="wrap">
+        <p class="eyebrow reveal">People</p>
+        <h2 class="reveal">The team behind the pipeline</h2>
+        <p class="section-copy reveal">Cross-functional ownership across product direction, analytics engineering, NLP, and quality assurance.</p>
+
+        <ul class="team-list">
+          <li class="reveal">
+            <h3>Iftekhar Alam Fahim</h3>
+            <p>Project Manager, Data Analyst, and Front-End Engineer</p>
+          </li>
+          <li class="reveal">
+            <h3>Ridoy Kumar Adhikary</h3>
+            <p>Data Analyst and Back-End Engineer</p>
+          </li>
+          <li class="reveal">
+            <h3>Rafi Ahmed</h3>
+            <p>Data Analyst and NLP/AI Engineer</p>
+          </li>
+          <li class="reveal">
+            <h3>MD Mayenaz Rasul Faraz</h3>
+            <p>Data Analyst and Quality Assurance (QA) Engineer</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="tracks">
+      <div class="wrap">
+        <p class="eyebrow reveal">Workstreams</p>
+        <h2 class="reveal">Two tracks, one dataset story</h2>
+        <p class="section-copy reveal">
+          Core modules answer what happens inside Yelp. Enrichment modules ask why - by joining weather, crime, location risk, and manipulation signals.
+        </p>
+
+        <div class="track-grid">
+          <article class="track reveal">
+            <p class="track-label">Track 01</p>
+            <h3>Data Analysis</h3>
+            <p>Business, check-in, rating, review, user, and comprehensive cross-entity studies that map market structure and customer behavior.</p>
+            <ul>
+              <li>Business Analysis - 13 scripts</li>
+              <li>Check-in Analysis - 6 scripts</li>
+              <li>Comprehensive Analysis - 3 scripts</li>
+              <li>Rating Analysis - 6 scripts</li>
+              <li>Review Analysis - 12 scripts</li>
+              <li>User Analysis - 11 scripts</li>
+            </ul>
+          </article>
+
+          <article class="track reveal">
+            <p class="track-label">Track 02</p>
+            <h3>Data Enrichment</h3>
+            <p>External and open-world context layered onto Yelp outcomes - weather mood, cursed storefronts, crime zones, and review-trust forensics.</p>
+            <ul>
+              <li>Weather-Mood Analysis - 4 scripts</li>
+              <li>Cursed Storefronts &amp; Attribution - 6 scripts</li>
+              <li>Review Manipulation - 7 scripts</li>
+              <li>Open-World Crime Enrichment - 9 scripts</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="modules">
+      <div class="wrap">
+        <p class="eyebrow reveal">Modules</p>
+        <h2 class="reveal">What each domain investigates</h2>
+
+        <div class="module-table reveal" role="table" aria-label="Analysis modules">
+          <div class="module-row module-head" role="row">
+            <span role="columnheader">Module</span>
+            <span role="columnheader">Focus</span>
+          </div>
+          <div class="module-row" role="row">
+            <span role="cell"><strong>Business</strong></span>
+            <span role="cell">Chain dominance, city/state hubs, category synergies, satisfaction gaps, and turnaround candidates.</span>
+          </div>
+          <div class="module-row" role="row">
+            <span role="cell"><strong>Check-in</strong></span>
+            <span role="cell">Foot-traffic timing, growth rates, and engagement rhythms across venues.</span>
+          </div>
+          <div class="module-row" role="row">
+            <span role="cell"><strong>Rating</strong></span>
+            <span role="cell">Star distributions, weekly patterns, cuisine/city differentials, nightlife weekend effects.</span>
+          </div>
+          <div class="module-row" role="row">
+            <span role="cell"><strong>Review</strong></span>
+            <span role="cell">Volume trends, useful/funny/cool votes, bigrams, pain points, length-vs-rating, menu mining.</span>
+          </div>
+          <div class="module-row" role="row">
+            <span role="cell"><strong>User</strong></span>
+            <span role="cell">Growth cohorts, elite impact, silent users, dining diversity, and rating evolution.</span>
+          </div>
+          <div class="module-row" role="row">
+            <span role="cell"><strong>Comprehensive</strong></span>
+            <span role="cell">Cross-entity merchant leaders, review conversion, and check-in drop-off diagnosis.</span>
+          </div>
+          <div class="module-row" role="row">
+            <span role="cell"><strong>Weather-Mood</strong></span>
+            <span role="cell">Extreme weather effects on ratings, check-ins, and comfort-food preference shifts.</span>
+          </div>
+          <div class="module-row" role="row">
+            <span role="cell"><strong>Cursed Storefronts</strong></span>
+            <span role="cell">Location potential, closure clusters, parking/noise attributes, NLP pain-point attribution.</span>
+          </div>
+          <div class="module-row" role="row">
+            <span role="cell"><strong>Review Manipulation</strong></span>
+            <span role="cell">5-star spike detection, ghost accounts, syndicate networks, and fraud vocabulary signatures.</span>
+          </div>
+          <div class="module-row" role="row">
+            <span role="cell"><strong>Crime Enrichment</strong></span>
+            <span role="cell">Crime-zone survival, ratings, cuisine mix, check-ins, and crime-dining correlation.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="findings">
+      <div class="wrap">
+        <p class="eyebrow reveal">Selected results</p>
+        <h2 class="reveal">Highlights from the analyses</h2>
+        <p class="section-copy reveal">A sample of publication findings exported from module notebooks into <code>results/</code>.</p>
+
+        <div class="findings">
+          <article class="finding reveal">
+            <h3>Market structure</h3>
+            <p>Starbucks (724) and McDonald’s (703) lead chain density. Philadelphia tops city merchant counts (~14.5k). Restaurants, Food, and Shopping dominate category volume.</p>
+          </article>
+          <article class="finding reveal">
+            <h3>Weather mood</h3>
+            <p>Extreme heat posts the lowest average rating (~3.75) with elevated 1-star share. Heavy snow cuts foot traffic by roughly 80% versus normal conditions.</p>
+          </article>
+          <article class="finding reveal">
+            <h3>Trust &amp; manipulation</h3>
+            <p>260 businesses flagged for anomalous 5-star spikes. Among suspicious reviews, over half come from zero-fan accounts; persuasive tokens like “definitely” and “recommend” dominate fraud-linked text.</p>
+          </article>
+          <article class="finding reveal">
+            <h3>Review language</h3>
+            <p>Useful votes exceed 8.2M platform-wide. Pain-point bigrams recur around wait times and wasted money. 1-star reviews run longer (~134 words) than 5-star reviews (~85).</p>
+          </article>
+          <article class="finding reveal">
+            <h3>Location risk</h3>
+            <p>Walkability and closure patterns surface “potentially cursed” and “severely cursed” storefront cohorts, with pain points clustering around bad location and price issues.</p>
+          </article>
+          <article class="finding reveal">
+            <h3>Crime context</h3>
+            <p>Restaurant survival and engagement differ across high/medium crime zones; zone-level rating, cuisine, and check-in tables support cross-metric comparison.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="results">
+      <div class="wrap">
+        <p class="eyebrow">Generated from analysis outputs</p>
+        <h2>Result charts</h2>
+        <p class="section-copy">
+          Charts are generated for every analysis from the module CSV results - not the original exported PNG files. Filter by track or module to explore each study.
+        </p>
+
+        <div class="gallery-toolbar" id="gallery-toolbar" aria-label="Filter result charts">
+          <div class="filter-row" id="track-filters"></div>
+          <div class="filter-row" id="module-filters"></div>
+          <p class="gallery-meta" id="gallery-meta"></p>
+        </div>
+
+        <div id="gallery-root" class="gallery-root" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section class="section" id="dataset">
+      <div class="wrap split">
+        <div>
+          <p class="eyebrow reveal">Data</p>
+          <h2 class="reveal">Dataset &amp; enrichment sources</h2>
+          <p class="section-copy reveal">
+            Primary source is the
+            <a href="https://www.yelp.com/dataset" target="_blank" rel="noopener noreferrer">Yelp Open Dataset</a>
+            - business, review, user, check-in, and tip entities. Enrichment modules join weather series and public urban/crime context where relevant.
+          </p>
+        </div>
+        <aside class="aside reveal" aria-label="Entity list">
+          <h3>Typical entities</h3>
+          <ul>
+            <li>business</li>
+            <li>review</li>
+            <li>user</li>
+            <li>checkin</li>
+            <li>tip</li>
+            <li>external weather / crime tables</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="stack">
+      <div class="wrap">
+        <p class="eyebrow reveal">Runtime</p>
+        <h2 class="reveal">Technology &amp; workflow</h2>
+        <p class="section-copy reveal">
+          Processing runs on Apache Spark (PySpark) with Apache Zeppelin notebooks (<code>%pyspark</code>). Queries use Spark SQL / DataFrame APIs against Hive-compatible catalogs such as <code>yelp_db.*</code>, <code>yelp.*</code>, and <code>external_data.*</code>.
+        </p>
+
+        <ol class="workflow reveal">
+          <li>
+            <strong>Explore</strong>
+            <span>Open domain notebooks under <code>notebooks/</code>.</span>
+          </li>
+          <li>
+            <strong>Execute</strong>
+            <span>Run matching PySpark scripts in <code>src/</code> once catalog tables are available.</span>
+          </li>
+          <li>
+            <strong>Publish</strong>
+            <span>Export CSV and graph artifacts to <code>results/</code> for reporting and QA review.</span>
+          </li>
+        </ol>
+
+        <pre class="repo-tree reveal" aria-label="Repository structure"><code>scui-bigdata-03-YelpAnalysis/
+├── src/
+│   ├── data-analysis/
+│   └── data-enrichment/
+├── notebooks/
+├── results/
+└── docs/          ← this GitHub Pages site</code></pre>
+      </div>
+    </section>
+
+    <section class="section" id="status">
+      <div class="wrap status-block">
+        <div class="reveal">
+          <p class="eyebrow">Status &amp; roadmap</p>
+          <h2>Active development</h2>
+          <p class="section-copy">
+            The project is in progress. Near-term work continues deepening cross-module integration, standardizing runtime bootstrap docs, and adding a planned conversational Text-to-SQL application when ready.
+          </p>
+        </div>
+        <div class="cta-panel reveal">
+          <p>Academic / educational use, aligned with Yelp Dataset Terms of Use.</p>
+          <a class="btn btn-primary" href="https://github.com/iftekharalamfahim/scui-bigdata-03-YelpAnalysis" target="_blank" rel="noopener noreferrer">Open on GitHub</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p><strong>Yelp Analysis</strong> - SCUI Big Data · Team 03</p>
+      <p><a href="https://www.yelp.com/dataset/terms" target="_blank" rel="noopener noreferrer">Yelp Dataset Terms</a></p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.8/dist/chart.umd.min.js"></script>
+  <script src="chart-data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
